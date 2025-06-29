@@ -23,6 +23,7 @@ export default function MiModal({ pokemon }: Props) {
       <Dialog.Portal>
         <Dialog.Overlay className="fixed inset-0 bg-black/30 z-40" />
         <Dialog.Content className="fixed top-1/2 left-1/2 w-[90%] max-w-md bg-white rounded-xl shadow-lg p-6 z-50 -translate-x-1/2 -translate-y-1/2">
+          <Dialog.Title className="sr-only">Detalle del Pokemon</Dialog.Title>
           <div className="flex justify-between items-center mb-4">
             <div className="w-full text-center mt-2">
               <p className="text-lg font-semibold capitalize">{pokemon.name}</p>
