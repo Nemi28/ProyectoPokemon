@@ -23,14 +23,15 @@ Esta aplicacion usa la POKEAPI: https://pokeapi.co/:
 
 1. Clona el repositorio:
    git clone https://github.com/Nemi28/ProyectoPokemon.git
-   cd mi-proyecto-pokemon
+   cd ProyectoPokemon
 2. Instala las dependencias:
-   npm run install
-3. Configura las variables de entorno:
+   npm install
+3. Configura las variables de entorno(.env):
    DATABASE_URL="postgresql://usuario:contraseña@localhost:5432/pokemon_db"
    Cambia Usurio y contraseña, por las tuyas.
    Crea una base de datos con el nombre: "pokemon_db"
 4. Realiza las migraciones a la base de datos:
+   npx prisma generate
    npx prisma migrate dev --name init
 5. Ejecuta:
    npm run dev
